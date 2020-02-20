@@ -4,19 +4,19 @@ import factoryMethodBefore.Shape;
 
 public class Main {
 	public static void main(String[] args) {
-		ShapeFactoryImplementation factory = new ShapeFactoryImplementation();
+		ShapeFactory factory = new ShapeFactoryImplementation();
 		try {
-			Shape shape = factory.make("Circle");
-			shape.draw();
+			Shape shape1 = factory.make("Circle");
+			shape1.draw();
 			
-			shape = factory.make("Square");
-			shape.draw();
+			Shape shape2 = factory.make("Square");
+			shape2.draw();
 			
-			shape = factory.make("Triangle");
-			shape.draw();
-			
+			Shape shape3 = factory.make("Triangle");
+			shape3.draw();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 }
+

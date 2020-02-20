@@ -2,10 +2,10 @@ package factoryMethodBefore;
 
 public class Main {
 	public static void main(String[] args) {		
-		Circle circle = new Circle();
+		Shape circle = new Circle();
 		circle.draw();		
 		
-		Square square = new Square();
+		Shape square = new Square();
 		square.draw();
 	}
 }
